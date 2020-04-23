@@ -1,0 +1,30 @@
+#include"stdio.h"
+#include <math.h>
+main()
+{
+    int x,day,hour,min,leftmin,leftsec;
+    scanf("%d",&x);
+    day = x/86400;
+    if(day>0){
+       day = ceil(day);
+    }
+    
+   
+    
+    x = x-86400*day;
+   	if(x<86400&&x>=0){
+    leftsec = x%60;
+	min = x/60;
+	hour = min/60;
+	leftmin = min%60; 
+	   }
+	   
+	   if(day>0){
+   		    printf("%d day %d:%d:%d",day,hour,leftmin,leftsec);
+      	}
+      	
+		if(day==0){
+		  printf("%d:%d:%d",hour,leftmin,leftsec);	
+		}
+}
+

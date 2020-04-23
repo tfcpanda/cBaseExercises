@@ -1,0 +1,13 @@
+#include"stdio.h"
+int sum(@#1);   //函数原型申明
+main()
+{
+   int n,s;
+   scanf("%d",&n);
+   s=@#2   //函数调用
+    printf("%d\n",s);
+}
+     //函数定义（设计
+@@1
+
+@@1

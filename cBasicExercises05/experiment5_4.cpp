@@ -1,0 +1,20 @@
+#include "stdio.h"
+int main()
+{
+	int x;
+	char y;
+	scanf("%c",&y);
+	x = y;
+	if(x>=97&&x<=122){
+		printf("lower");
+		}
+	else if(x>=65&&x<=106){	
+		printf("upper");
+	}	
+	else if(x>=48&&x<=57){	
+		printf("digit");
+	}
+	else{
+		printf("other");
+	}	
+}

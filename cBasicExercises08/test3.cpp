@@ -1,0 +1,27 @@
+#include"stdio.h"
+main()
+{
+    int x,a,b,i,j=0;
+	scanf("%d",&x);
+	a=x;
+		while(a>10)
+	{
+a/=10;
+j++;
+}
+j++;
+for(i=1;i<=j;i++)
+{
+if(x%10==0)
+{
+x=x/10;
+j--;
+}
+}
+for(i=1;i<=j;i++)
+{
+b=x%10;
+printf("%d",b);
+x/=10;
+}
+}

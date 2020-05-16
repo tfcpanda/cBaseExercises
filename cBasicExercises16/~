@@ -1,0 +1,24 @@
+#include"stdio.h"
+void inputdata(int a[],int n);  //输入数据
+int deldata(int a[],int n,int p);  //p表示要删除的数据或下标，n表示数据个数
+void outputdata(int a[],int n);    //输出数组内容
+main()
+{   int b[20]; 
+    int m,k,r;
+    scanf("%d%d",&m,&k); 
+    inputdata(b,m);
+    @@1
+
+    @@1
+    outputdata(b,m); 
+    return 0;
+}
+void inputdata(int a[],int n)
+{
+	int i;
+	for(i=0;i<n;i++)
+	scanf("%d",&a[i]);
+}
+@@2
+
+@@2

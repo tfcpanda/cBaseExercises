@@ -1,0 +1,35 @@
+1 #include <iostream>
+ 2 
+ 3 using namespace std;
+ 4 
+ 5 void Select_sort(int *a, int len);
+ 6 
+ 7 int main()
+ 8 {
+ 9     int arr[] = {1, 4, 8, 7, 3, 0, 9, 6, 5, 2};
+10     Select_sort(arr, 10);
+11     for(int i(0); i<10; i++)
+12     {
+13         cout << arr[i] << ' ';
+14     }
+15     cout << endl;
+16 
+17     return 0;
+18 }
+19 // 选择排序，可以选择最小值
+20 void Select_sort(int *a, int len)
+21 {
+22     //第一个for循环表示要找len-1次最小值
+23     for(int i=0; i<len-1; i++)
+24     {
+25         int min_x = i;
+26         //从i索引值到最后索引值，开执找最小值
+27         for(int j=i+1; j<len; j++)
+28         {
+29             if(a[min_x] >= a[j])
+30                 min_x = j;  //j索引的值就被认为是最小值
+31         }
+32         swap(a[i], a[min_x]);
+33         //第i次找到的最小值就与第i个索引值交换
+34     }
+35 }
